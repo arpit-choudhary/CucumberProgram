@@ -1,0 +1,198 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "With Valid Credentials",
+        "description": "",
+        "id": "testing-login-functionality;with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "line": 4,
+            "name": "User is on the Login page",
+            "keyword": "Given "
+          },
+          {
+            "line": 5,
+            "name": "user enters username",
+            "keyword": "When "
+          },
+          {
+            "line": 6,
+            "name": "user enters password",
+            "keyword": "And "
+          },
+          {
+            "line": 7,
+            "name": "User clicks on sigin button",
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 23520,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User should be logged in",
+            "match": {
+              "location": "CopyOfSteps.User_should_be_logged_in()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "name": "With InValid Credentials",
+        "description": "",
+        "id": "testing-login-functionality;with-invalid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "line": 12,
+            "name": "User is on the Login page",
+            "keyword": "Given "
+          },
+          {
+            "line": 13,
+            "name": "User enters incorrect username \"abc\"",
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "line": 14,
+            "name": "User enters incorrect password \"abc\"",
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "line": 15,
+            "name": "User clicks on sigin button \"arp\" \"ank\" \"sev\"",
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20954,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User should not be logged in",
+            "match": {
+              "location": "CopyOfSteps.User_should_not_be_logged_in()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "name": "With InValid Credentials",
+        "description": "",
+        "id": "testing-login-functionality;with-invalid-credentials;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "line": 12,
+            "name": "User is on the Login page",
+            "keyword": "Given "
+          },
+          {
+            "line": 13,
+            "name": "User enters incorrect username \"def\"",
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "line": 14,
+            "name": "User enters incorrect password \"def\"",
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "line": 15,
+            "name": "User clicks on sigin button \"arp\" \"ank\" \"sev\"",
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13685,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User should not be logged in",
+            "match": {
+              "location": "CopyOfSteps.User_should_not_be_logged_in()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "With InValid Credentials",
+        "description": "",
+        "id": "testing-login-functionality;with-invalid-credentials;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "line": 12,
+            "name": "User is on the Login page",
+            "keyword": "Given "
+          },
+          {
+            "line": 13,
+            "name": "User enters incorrect username \"xyz\"",
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "line": 14,
+            "name": "User enters incorrect password \"xyzz\"",
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "line": 15,
+            "name": "User clicks on sigin button \"arp\" \"ank\" \"sev\"",
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14112,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User should not be logged in",
+            "match": {
+              "location": "CopyOfSteps.User_should_not_be_logged_in()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Testing Login functionality",
+    "description": "",
+    "id": "testing-login-functionality",
+    "keyword": "Feature",
+    "uri": "testCases\\Login.feature"
+  }
+]
